@@ -20,7 +20,7 @@ jobs:
       - name: Scaffold Flutter project (if not already present)
         run: |
           if [ ! -f pubspec.yaml ]; then
-            flutter create .
+            flutter create --project-name simple_flutter_app .
           fi
 
       - name: Get dependencies
